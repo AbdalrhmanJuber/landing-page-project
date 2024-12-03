@@ -239,7 +239,8 @@ section.your-active-class .landing__container::after {
 }
 /* tyle the active section */
 .active {
-    background-color: lightblue;
+    background-color: black;
+    color: white;
 }
 
 /* will make the sections collapsible */
