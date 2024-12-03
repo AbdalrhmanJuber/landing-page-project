@@ -90,10 +90,13 @@ function handleScroll() {
 function activeSection() {
     sections.forEach(section => {
         const box = section.getBoundingClientRect();
+        const nav_link = document.querySelector(`a[href="#${section.id}"]`);
         if (box.top <= 150 && box.bottom >= 150) {
             section.classList.add('active');
+            nav_link.classList.add('active');
         } else {
             section.classList.remove('active');
+            nav_link.classList.remove('active');
         }
     });
 }
